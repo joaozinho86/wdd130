@@ -1,7 +1,9 @@
 :root {
     --cor-primaria: #0a3d62;
     --cor-destaque1: #1e3799;
+    --cor-destaque2: #4a69bd;
     --cor-fundo: #f5f5f5;
+
     --fonte-body: Arial, Helvetica, sans-serif;
     --fonte-titulo: 'Trebuchet MS', sans-serif;
 }
