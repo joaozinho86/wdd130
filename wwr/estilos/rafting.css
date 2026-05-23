@@ -1,6 +1,3 @@
-/* ================================
-   VARIÁVEIS GERAIS
-================================ */
 :root {
     --cor-primaria: #0a3d62;
     --cor-destaque1: #1e3799;
@@ -11,73 +8,55 @@
     --fonte-titulo: 'Trebuchet MS', sans-serif;
 }
 
-/* ================================
-   RESET DO BOX-MODEL
-================================ */
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-/* ================================
-   BODY
-================================ */
 body {
     font-family: var(--fonte-body);
     color: var(--cor-destaque1);
     background-color: var(--cor-fundo);
 }
 
-/* ================================
-   LARGURA CENTRALIZADA
-================================ */
 header, main, footer {
     width: 840px;
     margin: 0 auto;
 }
 
-/* ================================
-   TÍTULOS
-================================ */
 h1, h2 {
     font-family: var(--fonte-titulo);
     color: var(--cor-primaria);
     text-align: center;
 }
 
-/* ================================
-   MARGENS E PADDINGS PADRÃO
-================================ */
 nav, p, section, article {
     margin: 16px;
     padding: 8px;
 }
 
-/* ================================
-   REMOVER SUBLINHADO DAS REDES SOCIAIS
-================================ */
-.redes-sociais a {
+.socialmedia a {
     text-decoration: none;
 }
 
-/* ================================
-   HERO COM SOBREPOSIÇÃO
-================================ */
+.socialmedia img {
+    width: 32px;
+    margin: 0 6px;
+}
+
 .hero {
-    position: relative; /* permite posicionar h1 e article por cima */
+    position: relative;
     width: 100%;
     overflow: hidden;
 }
 
-/* imagem do hero */
 .hero img {
     display: block;
     width: 100%;
     height: auto;
 }
 
-/* título sobre a imagem */
 .hero h1 {
     position: absolute;
     top: 20px;
@@ -90,7 +69,6 @@ nav, p, section, article {
     font-size: 2rem;
 }
 
-/* article sobre a imagem */
 .hero article {
     position: absolute;
     bottom: 20px;
@@ -101,7 +79,6 @@ nav, p, section, article {
     border-radius: 8px;
 }
 
-/* imagem dentro do article (flutuando à direita) */
 .hero article img {
     float: right;
     width: 125px;
@@ -109,17 +86,9 @@ nav, p, section, article {
     border-radius: 6px;
 }
 
-/* ================================
-   FOOTER
-================================ */
 footer {
     text-align: center;
     padding: 20px;
     background-color: var(--cor-primaria);
     color: white;
-}
-
-.redes-sociais img {
-    width: 32px;
-    margin: 0 6px;
 }
