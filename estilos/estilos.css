@@ -85,11 +85,25 @@ aside h2 {
   left: 120px;
 }
 
-/* Footer */
+/* Footer estilizado */
 footer {
   margin-top: 15px;
   border-top: 1px solid #000;
   text-align: center;
+  padding: 1rem;
+}
+
+footer a {
+  display: inline-block;
+  padding: 0.5rem;
+  text-decoration: none;
+  font-size: 1rem;
+  font-weight: 600;
+  color: steelblue;
+}
+
+footer a:hover {
+  color: darkblue;
 }
 
 /* Borda inferior no título */
