@@ -93,7 +93,18 @@ footer {
   padding: 1rem;
 }
 
-footer a {
+footer p {
+  margin-bottom: 0.5rem;
+}
+
+/* Links sociais no footer */
+footer .social {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+}
+
+footer .social a {
   display: inline-block;
   padding: 0.5rem;
   text-decoration: none;
@@ -102,7 +113,7 @@ footer a {
   color: steelblue;
 }
 
-footer a:hover {
+footer .social a:hover {
   color: darkblue;
 }
 
