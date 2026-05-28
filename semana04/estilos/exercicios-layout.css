@@ -23,34 +23,46 @@ div {
 
 .flex {
     background-color: #aba;
-    /* escreva declaracoes aqui */
-
+    display: flex;
+    justify-content: center; /* Centraliza horizontalmente */
+    align-items: center;     /* Centraliza verticalmente */
+    height: 150px;
 }
 
 .grid {
     background-color: #abb;
-    /* escreva declaracoes aqui */
-
+    display: grid;
+    place-items: center;     /* Centraliza horizontal e vertical */
+    height: 150px;
 }
 
 .container2 {
-    /* escreva declaracoes aqui */
-
+    display: grid;
+    grid-template-columns: 1fr 1fr; /* duas colunas iguais */
+    gap: 10px;
 }
 
 .dois {
     background-color: #ace;
     height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .container3 {
-    /* escreva declaracoes aqui */
+    display: flex;
+    justify-content: center;
+    align-items: center;
 
 }
 
 .colunas-3 {
-    /* escreva declaracoes aqui */
-
+    background-color: #acf;
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .tres {
