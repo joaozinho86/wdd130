@@ -25,26 +25,41 @@ header, main, footer {
     margin: 0 auto;
 }
 
+/* Títulos */
 h1, h2 {
     font-family: var(--fonte-titulo);
     color: var(--cor-primaria);
     text-align: center;
 }
 
-nav, p, section, article {
-    margin: 16px;
-    padding: 8px;
+/* Header com Grid */
+header {
+    display: grid;
+    grid-template-columns: 150px auto;
+    align-items: center;
+    padding: 1rem;
+    background-color: var(--cor-primaria);
 }
 
-.socialmedia a {
+header img {
+    max-width: 100%;
+    height: auto;
+}
+
+/* Nav com Flex */
+header nav {
+    display: flex;
+    justify-content: flex-end;
+    gap: 1.5rem;
+}
+
+header nav a {
+    color: white;
     text-decoration: none;
+    font-weight: bold;
 }
 
-.socialmedia img {
-    width: 32px;
-    margin: 0 6px;
-}
-
+/* Hero */
 .hero {
     position: relative;
     width: 100%;
@@ -63,7 +78,7 @@ nav, p, section, article {
     width: 100%;
     padding: 16px;
     text-align: center;
-    opacity: 0.7;
+    opacity: 0.8;
     background-color: var(--cor-destaque1);
     color: #fff;
     font-size: 2rem;
@@ -74,7 +89,7 @@ nav, p, section, article {
     bottom: 20px;
     right: 20px;
     width: 260px;
-    background-color: rgba(255, 255, 255, 0.75);
+    background-color: rgba(255, 255, 255, 0.85);
     padding: 12px;
     border-radius: 8px;
 }
@@ -86,9 +101,54 @@ nav, p, section, article {
     border-radius: 6px;
 }
 
-footer {
+/* Seção História */
+.historia {
+    margin: 2rem auto;
+    max-width: 800px;
+    line-height: 1.6;
+}
+
+.aventura .galeria {
+    display: flex;
+    justify-content: space-between;
+    gap: 1rem;
+    flex-wrap: wrap;
+}
+
+.aventura figure {
+    flex: 1;
     text-align: center;
-    padding: 20px;
+}
+
+.aventura img {
+    width: 100%;
+    height: 200px;       /* altura fixa para todas */
+    object-fit: cover;   /* corta proporcionalmente sem distorcer */
+    border-radius: 8px;
+}
+
+.aventura figcaption {
+    margin-top: 6px;
+    font-size: 0.9rem;
+    color: var(--cor-destaque2);
+}
+
+/* Footer */
+footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
     background-color: var(--cor-primaria);
+    padding: 20px;
     color: white;
+}
+
+footer .socialmedia {
+    display: flex;
+    gap: 1rem;
+}
+
+footer .socialmedia img {
+    width: 32px;
+    height: 32px;
 }
