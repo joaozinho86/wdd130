@@ -1,0 +1,121 @@
+/* Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Corpo */
+body {
+  font-family: Merriweather, Georgia, serif;
+  font-size: 1.1em;
+  color: #333;
+  background: #fff;
+  padding: 1rem;
+}
+
+/* Header */
+header {
+  margin: 0 auto;
+  width: 650px;
+}
+
+h1 {
+  margin: 1rem;
+  font-size: 1.6em;
+  color: navy;
+  text-align: center;
+}
+
+/* Formulário */
+form {
+  width: 650px;
+  margin: 0 auto;
+  padding: 1.5rem;
+  border: 1px solid rgb(0 0 0 / 0.1);
+  border-radius: 0.5rem;
+  background-color: #eee; /* fundo cinza claro */
+  display: grid;
+  gap: 1rem;
+}
+
+/* Fieldsets */
+fieldset {
+  display: grid;
+  gap: 1rem;
+  margin: 1rem 0;
+  border: 1px solid #ccc;
+  padding: 1rem;
+  background-color: #fff; /* fundo branco */
+}
+
+legend {
+  padding: 0.5rem;
+  color: navy;
+  font-size: 1.2em;
+  font-weight: bold;
+}
+
+/* Elementos */
+label, input, button, select, textarea {
+  font-family: Roboto, Arial, sans-serif;
+}
+
+label {
+  text-align: right;
+  padding-right: 1rem;
+  font-weight: bold;
+}
+
+input, select, textarea {
+  padding: 0.5rem;
+  font-size: 1rem;
+  border: 1px solid #aaa;
+  border-radius: 0.3rem;
+}
+
+/* Checkbox */
+input[type="checkbox"] {
+  width: 22px;
+  height: 22px;
+  vertical-align: middle;
+}
+
+/* Botão */
+button {
+  margin: 1rem auto;
+  background-color: #007BFF; /* azul */
+  color: #fff;
+  border: none;
+  border-radius: .5rem;
+  padding: .75rem 1.5rem;
+  font-size: 1.2rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: #0056b3; /* azul mais escuro no hover */
+}
+
+/* Footer */
+footer {
+  margin: 1rem auto 0;
+  width: 650px;
+  text-align: center;
+  font-size: 0.8em;
+  color: #777;
+  border-top: 1px solid #ccc;
+  padding-top: 1rem;
+}
+
+/* Layout */
+.item-formulario {
+  display: grid;
+  align-items: center;
+}
+
+.coluna2 {
+  grid-template-columns: 1fr 2fr;
+  margin: 0.5rem 0;
+}
