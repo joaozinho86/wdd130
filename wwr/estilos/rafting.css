@@ -66,33 +66,9 @@ header nav a:hover {
 
 /* Hero */
 .hero {
-    position: relative; /* necessário para sobreposição */
+    position: relative; /* container relativo */
     text-align: center;
-    padding: 2rem;
-    background-color: var(--cor-destaque2);
-    color: white;
-    border-radius: 8px;
     margin: 1rem 0;
-}
-
-.hero h1 {
-    font-size: 2rem;
-    margin-bottom: 1rem;
-    color: white; /* corrigido para contraste */
-    position: absolute; /* sobreposição */
-    top: 20px;
-    left: 50%;
-    transform: translateX(-50%);
-}
-
-.hero p {
-    max-width: 600px;
-    margin: 0 auto 1rem auto;
-    line-height: 1.6;
-    position: absolute; /* sobreposição */
-    bottom: 20px;
-    left: 50%;
-    transform: translateX(-50%);
 }
 
 .hero img {
@@ -100,6 +76,28 @@ header nav a:hover {
     height: 300px;
     object-fit: cover;
     border-radius: 8px;
+}
+
+/* Conteúdo sobreposto */
+.hero h1 {
+    font-size: 2rem;
+    color: white;
+    position: absolute;
+    top: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.6); /* melhora contraste */
+}
+
+.hero article {
+    position: absolute;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    color: white;
+    max-width: 600px;
+    line-height: 1.6;
+    text-shadow: 1px 1px 3px rgba(0,0,0,0.6);
 }
 
 /* História */
