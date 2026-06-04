@@ -21,17 +21,18 @@ body {
 }
 
 header, main, footer {
-    max-width: 960px;
-    width: 100%;
+    width: 960px;
     margin: 0 auto;
 }
 
+/* Títulos */
 h1, h2 {
     font-family: var(--fonte-titulo);
     color: var(--cor-primaria);
     text-align: center;
 }
 
+/* Header com Grid */
 header {
     display: grid;
     grid-template-columns: 150px auto;
@@ -45,6 +46,7 @@ header img {
     height: auto;
 }
 
+/* Nav do Header corrigido */
 header nav {
     display: flex;
     justify-content: flex-end;
@@ -52,7 +54,7 @@ header nav {
 }
 
 header nav a {
-    color: white;
+    color: white; /* corrigido para contraste */
     text-decoration: none;
     font-weight: bold;
     transition: color 0.3s;
@@ -62,30 +64,35 @@ header nav a:hover {
     color: var(--cor-destaque2);
 }
 
+/* Hero */
 .hero {
-    position: relative;
+    position: relative; /* necessário para sobreposição */
     text-align: center;
     padding: 2rem;
     background-color: var(--cor-destaque2);
     color: white;
     border-radius: 8px;
     margin: 1rem 0;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
 }
 
 .hero h1 {
     font-size: 2rem;
     margin-bottom: 1rem;
-    color: white;
+    color: white; /* corrigido para contraste */
+    position: absolute; /* sobreposição */
+    top: 20px;
+    left: 50%;
+    transform: translateX(-50%);
 }
 
 .hero p {
     max-width: 600px;
     margin: 0 auto 1rem auto;
     line-height: 1.6;
+    position: absolute; /* sobreposição */
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
 }
 
 .hero img {
@@ -93,9 +100,9 @@ header nav a:hover {
     height: 300px;
     object-fit: cover;
     border-radius: 8px;
-    margin-top: 1rem;
 }
 
+/* História */
 .historia {
     margin: 2rem auto;
     max-width: 900px;
@@ -117,18 +124,21 @@ header nav a:hover {
     line-height: 1.6;
 }
 
+/* Aventura */
 .aventura {
     margin: 2rem auto;
     max-width: 960px;
 }
 
 .aventura .galeria {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    display: flex;
+    justify-content: space-between;
     gap: 1rem;
+    flex-wrap: wrap;
 }
 
 .aventura figure {
+    flex: 1;
     text-align: center;
 }
 
@@ -145,6 +155,7 @@ header nav a:hover {
     color: var(--cor-destaque1);
 }
 
+/* Footer */
 footer {
     display: flex;
     flex-direction: column;
@@ -167,6 +178,7 @@ footer .socialmedia img {
     height: 32px;
 }
 
+/* Nav do Footer */
 footer nav {
     display: flex;
     gap: 1rem;
@@ -176,7 +188,7 @@ footer nav {
 }
 
 footer nav a {
-    color: white; /* Melhor contraste */
+    color: #ddd;
     text-decoration: none;
     font-size: 0.9rem;
     transition: color 0.3s;
@@ -203,7 +215,7 @@ footer nav a:hover {
     }
 
     .aventura .galeria {
-        grid-template-columns: 1fr;
+        flex-direction: column;
     }
 
     .aventura img {
