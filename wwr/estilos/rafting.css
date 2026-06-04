@@ -45,14 +45,14 @@ header nav {
 }
 
 header nav a {
-    color: white; /* corrigido para contraste */
+    color: white; /* corrigido para contraste adequado */
     text-decoration: none;
     font-weight: bold;
     transition: color 0.3s;
 }
 
 header nav a:hover {
-    color: var(--cor-destaque2);
+    color: var(--cor-destaque2); /* azul claro para hover */
 }
 
 /* Hero */
