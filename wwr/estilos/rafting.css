@@ -1,8 +1,10 @@
 :root {
-    --cor-primaria: #0a3d62;   /* azul escuro */
+    --cor-primaria: #0a3d62;   /* fundo azul escuro */
     --cor-destaque1: #1e3799;  /* azul médio */
     --cor-destaque2: #4a69bd;  /* azul claro */
     --cor-fundo: #f5f5f5;
+    --cor-texto-header: #ffffff; /* branco para links */
+    --cor-hover-header: #e0e0e0; /* cinza claro para hover */
 
     --fonte-body: Arial, Helvetica, sans-serif;
     --fonte-titulo: 'Trebuchet MS', sans-serif;
@@ -45,14 +47,14 @@ header nav {
 }
 
 header nav a {
-    color: #ffffff; /* FORÇADO para branco */
+    color: var(--cor-texto-header); /* branco fixo */
     text-decoration: none;
     font-weight: bold;
     transition: color 0.3s;
 }
 
 header nav a:hover {
-    color: #e0e0e0; /* cinza claro para hover, contraste aprovado */
+    color: var(--cor-hover-header); /* cinza claro */
 }
 
 /* Hero */
