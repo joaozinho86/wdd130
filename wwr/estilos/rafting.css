@@ -1,7 +1,7 @@
 :root {
-    --cor-primaria: #0a3d62;
-    --cor-destaque1: #1e3799;
-    --cor-destaque2: #4a69bd;
+    --cor-primaria: #0a3d62;   /* azul escuro */
+    --cor-destaque1: #1e3799;  /* azul médio */
+    --cor-destaque2: #4a69bd;  /* azul claro */
     --cor-fundo: #f5f5f5;
 
     --fonte-body: Arial, Helvetica, sans-serif;
@@ -45,19 +45,19 @@ header nav {
 }
 
 header nav a {
-    color: white; /* corrigido para contraste adequado */
+    color: #ffffff; /* FORÇADO para branco */
     text-decoration: none;
     font-weight: bold;
     transition: color 0.3s;
 }
 
 header nav a:hover {
-    color: var(--cor-destaque2); /* azul claro para hover */
+    color: #e0e0e0; /* cinza claro para hover, contraste aprovado */
 }
 
 /* Hero */
 .hero {
-    position: relative; /* container relativo */
+    position: relative;
     margin: 2rem 0;
 }
 
@@ -72,7 +72,7 @@ header nav a:hover {
     font-family: var(--fonte-titulo);
     font-size: 2rem;
     color: white;
-    position: absolute; /* sobreposição */
+    position: absolute;
     top: 20px;
     left: 50%;
     transform: translateX(-50%);
@@ -80,7 +80,7 @@ header nav a:hover {
 }
 
 .hero article {
-    position: absolute; /* sobreposição */
+    position: absolute;
     bottom: 20px;
     left: 50%;
     transform: translateX(-50%);
