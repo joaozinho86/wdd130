@@ -21,7 +21,8 @@ body {
 }
 
 header, main, footer {
-    width: 960px;
+    max-width: 960px;
+    width: 100%;
     margin: 0 auto;
 }
 
@@ -69,26 +70,22 @@ header nav a:hover {
     color: white;
     border-radius: 8px;
     margin: 1rem 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
 .hero h1 {
     font-size: 2rem;
     margin-bottom: 1rem;
     color: white;
-    position: absolute;
-    top: 20px;
-    left: 50%;
-    transform: translateX(-50%);
 }
 
 .hero p {
     max-width: 600px;
     margin: 0 auto 1rem auto;
     line-height: 1.6;
-    position: absolute;
-    bottom: 20px;
-    left: 50%;
-    transform: translateX(-50%);
 }
 
 .hero img {
@@ -96,6 +93,7 @@ header nav a:hover {
     height: 300px;
     object-fit: cover;
     border-radius: 8px;
+    margin-top: 1rem;
 }
 
 .historia {
@@ -125,14 +123,12 @@ header nav a:hover {
 }
 
 .aventura .galeria {
-    display: flex;
-    justify-content: space-between;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
     gap: 1rem;
-    flex-wrap: wrap;
 }
 
 .aventura figure {
-    flex: 1;
     text-align: center;
 }
 
@@ -180,7 +176,7 @@ footer nav {
 }
 
 footer nav a {
-    color: #ddd;
+    color: white; /* Melhor contraste */
     text-decoration: none;
     font-size: 0.9rem;
     transition: color 0.3s;
@@ -207,7 +203,7 @@ footer nav a:hover {
     }
 
     .aventura .galeria {
-        flex-direction: column;
+        grid-template-columns: 1fr;
     }
 
     .aventura img {
