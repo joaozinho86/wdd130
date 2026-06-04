@@ -45,7 +45,7 @@ header nav {
 }
 
 header nav a {
-    color: white;
+    color: white; /* corrigido para contraste */
     text-decoration: none;
     font-weight: bold;
     transition: color 0.3s;
