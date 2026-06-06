@@ -1,0 +1,97 @@
+/* Reset e Estilos Globais */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #0f172a;
+    color: #f8fafc;
+    padding: 40px 20px;
+    display: flex;
+    justify-content: center;
+}
+
+/* Container do Formulário */
+.quiz-card {
+    background-color: #1e293b;
+    width: 100%;
+    max-width: 550px;
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.3);
+    border: 1px solid #334155;
+}
+
+h1 {
+    font-size: 24px;
+    text-align: center;
+    margin-bottom: 30px;
+    color: #38bdf8;
+    border-bottom: 2px solid #334155;
+    padding-bottom: 15px;
+}
+
+/* Estrutura do Layout em Coluna Única */
+.form-group {
+    margin-bottom: 25px;
+    display: flex;
+    flex-direction: column;
+}
+
+label {
+    font-size: 15px;
+    font-weight: 600;
+    margin-bottom: 10px;
+    color: #e2e8f0;
+    line-height: 1.4;
+}
+
+/* Estilização dos Elementos de Entrada */
+input[type="text"],
+input[type="number"],
+textarea,
+select {
+    background-color: #0f172a;
+    color: #f8fafc;
+    border: 1px solid #475569;
+    border-radius: 6px;
+    padding: 12px;
+    font-size: 15px;
+    outline: none;
+    transition: border-color 0.2s, box-shadow 0.2s;
+}
+
+input:focus,
+textarea:focus,
+select:focus {
+    border-color: #38bdf8;
+    box-shadow: 0 0 0 3px rgba(56, 189, 248, 0.2);
+}
+
+textarea {
+    resize: vertical;
+    min-height: 110px;
+    font-family: inherit;
+}
+
+/* Botão de Envio */
+button[type="submit"] {
+    background-color: #0ea5e9;
+    color: #ffffff;
+    border: none;
+    padding: 14px;
+    font-size: 16px;
+    font-weight: 600;
+    border-radius: 6px;
+    cursor: pointer;
+    width: 100%;
+    transition: background-color 0.2s;
+    margin-top: 10px;
+}
+
+button[type="submit"]:hover {
+    background-color: #0284c7;
+}
