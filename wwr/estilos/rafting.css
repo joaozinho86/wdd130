@@ -1,10 +1,11 @@
 :root {
-    --cor-primaria: #0a3d62;   /* fundo azul escuro */
-    --cor-destaque1: #1e3799;  /* azul médio */
-    --cor-destaque2: #4a69bd;  /* azul claro - agora usada no hover */
+    --cor-primaria: #0a3d62;
+    --cor-destaque1: #1e3799;
+    --cor-destaque2: #4a69bd;
     --cor-fundo: #f5f5f5;
-    --cor-texto-header: #ffffff; /* branco para links */
-    --cor-hover-header: var(--cor-destaque2); /* azul claro para hover */
+
+    --cor-branco: #ffffff;
+    --cor-preto: #000000;
 
     --fonte-body: Arial, Helvetica, sans-serif;
     --fonte-titulo: 'Trebuchet MS', sans-serif;
@@ -35,6 +36,7 @@ header {
     justify-content: space-between;
     padding: 1rem;
     background-color: var(--cor-primaria);
+    color: var(--cor-branco);
 }
 
 header img {
@@ -47,14 +49,14 @@ header nav {
 }
 
 header nav a {
-    color: var(--cor-texto-header); /* branco fixo */
+    color: var(--cor-branco);
     text-decoration: none;
     font-weight: bold;
     transition: color 0.3s;
 }
 
 header nav a:hover {
-    color: var(--cor-hover-header); /* azul claro */
+    color: var(--cor-destaque2);
 }
 
 /* Hero */
@@ -73,7 +75,7 @@ header nav a:hover {
 .hero h1 {
     font-family: var(--fonte-titulo);
     font-size: 2rem;
-    color: white;
+    color: var(--cor-branco);
     position: absolute;
     top: 20px;
     left: 50%;
@@ -86,7 +88,7 @@ header nav a:hover {
     bottom: 20px;
     left: 50%;
     transform: translateX(-50%);
-    color: white;
+    color: var(--cor-branco);
     max-width: 600px;
     text-align: center;
     text-shadow: 1px 1px 3px rgba(0,0,0,0.6);
@@ -154,7 +156,7 @@ footer {
     align-items: center;
     background-color: var(--cor-primaria);
     padding: 20px;
-    color: white;
+    color: var(--cor-branco);
     margin-top: 2rem;
     border-radius: 8px;
 }
