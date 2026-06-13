@@ -15,68 +15,77 @@
 
     <!-- Header -->
     <header>
-        <img src="imagens/rio-abaixo.png" alt="Logotipo Rio Abaixo">
-        <nav>
-            <a href="index.html">Página Inicial</a>
-            <a href="sobre.html">Sobre Nós</a>
-            <a href="passeios.html">Passeios</a>
-            <a href="contato.html">Fale Conosco</a>
+        <div class="logo">
+            <img src="imagens/rio-abaixo.png" alt="Logotipo Rio Abaixo">
+        </div>
+        <nav class="menu">
+            <ul>
+                <li><a href="index.html">Página Inicial</a></li>
+                <li><a href="sobre.html">Sobre Nós</a></li>
+                <li><a href="passeios.html">Passeios</a></li>
+                <li><a href="contato.html">Fale Conosco</a></li>
+            </ul>
         </nav>
     </header>
+
+    <!-- Nome da empresa -->
+    <section class="empresa">
+        <h1>Rio Abaixo Rafting</h1>
+    </section>
 
     <main>
 
         <!-- Hero -->
-        <div class="hero">
-            <div class="hero-texto">
-                <h1>Sobre Nós | Rio Abaixo Rafting</h1>
-                <p>
-                    Nossa missão é proporcionar experiências inesquecíveis em meio à natureza, unindo aventura,
-                    segurança e diversão. Cada descida é uma oportunidade de criar memórias incríveis.
-                </p>
-            </div>
-            <article>
-                <img src="imagens/perfil.webp" alt="Rio de águas cristalinas cercado por montanhas">
-            </article>
-        </div>
+        <section class="hero">
+            <p>
+                Nossa missão é proporcionar experiências inesquecíveis em meio à natureza, unindo aventura,
+                segurança e diversão. Cada descida é uma oportunidade de criar memórias incríveis.
+            </p>
+        </section>
 
         <!-- História -->
         <section class="historia">
             <h2>História</h2>
-            <p>
-                A Rio Abaixo nasceu do sonho de três amigos apaixonados por esportes radicais.
-                Começamos com apenas dois botes e muita vontade de explorar os rios da região.
-            </p>
-            <p>
-                Com o tempo, conquistamos reconhecimento pela segurança, profissionalismo e alegria
-                que levamos a cada aventura.
-            </p>
-            <img src="imagens/rafting12_1024.webp" alt="Equipe praticando rafting">
+            <div class="historia-conteudo">
+                <div class="texto-esquerda">
+                    <p>
+                        A Rio Abaixo nasceu do sonho de três amigos apaixonados por esportes radicais.
+                        Começamos com apenas dois botes e muita vontade de explorar os rios da região.
+                    </p>
+                </div>
+                <div class="imagem-centro">
+                    <img src="imagens/rafting12_1024.webp" alt="Equipe praticando rafting">
+                </div>
+                <div class="texto-direita">
+                    <p>
+                        Com o tempo, conquistamos reconhecimento pela segurança, profissionalismo e alegria
+                        que levamos a cada aventura.
+                    </p>
+                </div>
+            </div>
         </section>
 
         <!-- Aventura -->
         <section class="aventura">
             <h2>A aventura está te esperando!</h2>
-            <figure>
-                <img src="imagens/rio-negro.webp" alt="Salto do Rio Negro">
-                <figcaption>Salto do Rio Negro</figcaption>
-            </figure>
-            <figure>
-                <img src="imagens/paranapanema.webp" alt="Corredeira do Rio Paranapanema">
-                <figcaption>Corredeira do Rio Paranapanema</figcaption>
-            </figure>
-            <figure>
-                <img src="imagens/jacare.webp" alt="Corredeira do Rio Jacaré">
-                <figcaption>Corredeira do Rio Jacaré</figcaption>
-            </figure>
-            <figure>
-                <img src="imagens/iguacu.webp" alt="Corredeira do Rio Iguaçu">
-                <figcaption>Corredeira do Rio Iguaçu</figcaption>
-            </figure>
-            <figure>
-                <img src="imagens/amazonas.webp" alt="Corredeira do Rio Amazonas">
-                <figcaption>Corredeira do Rio Amazonas</figcaption>
-            </figure>
+            <div class="galeria">
+                <figure>
+                    <img src="imagens/rio-negro.webp" alt="Saída do Rio Negro">
+                    <figcaption>Saída do Rio Negro</figcaption>
+                </figure>
+                <figure>
+                    <img src="imagens/paranapanema.webp" alt="Corredeiras do Rio Paranaquara">
+                    <figcaption>Corredeiras do Rio Paranaquara</figcaption>
+                </figure>
+                <figure>
+                    <img src="imagens/jacare.webp" alt="Corredeiras do Rio Jacaré">
+                    <figcaption>Corredeiras do Rio Jacaré</figcaption>
+                </figure>
+                <figure>
+                    <img src="imagens/iguacu.webp" alt="Corredeiras do Rio Iguaçu">
+                    <figcaption>Corredeiras do Rio Iguaçu</figcaption>
+                </figure>
+            </div>
         </section>
 
     </main>
@@ -84,7 +93,7 @@
     <!-- Footer -->
     <footer>
         <p>© 2026 Rio Abaixo — João Correa</p>
-        <nav class="socialmedia">
+        <div class="socialmedia">
             <a href="https://facebook.com" target="_blank">
                 <img src="imagens/facebook-square.svg" alt="Facebook">
             </a>
@@ -94,7 +103,7 @@
             <a href="https://linkedin.com" target="_blank">
                 <img src="imagens/linkedin-square.svg" alt="Linkedin">
             </a>
-        </nav>
+        </div>
     </footer>
 
 </body>
