@@ -3,74 +3,86 @@
 
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>WWR - Rafting Adventure</title>
+    <title>Fale Conosco | Rio Abaixo Rafting</title>
+
     <meta name="description" content="Experiências incríveis de rafting e aventura ao ar livre.">
     <meta name="author" content="João Correa">
-    <link rel="stylesheet" href="rafting.css">
-</head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="estilos/rafting.css">
 
 <body>
+
+    <!-- HEADER PADRONIZADO -->
     <header>
-        <div class="logo">WWR Rafting</div>
+        <div class="logo">
+            <img src="imagens/rio-abaixo.png" alt="Logo Rio Abaixo Rafting">
+        </div>
         <nav>
-            <a href="index.html">Home</a>
+            <a href="index.html">Página Inicial</a>
+            <a href="sobre.html">Sobre Nós</a>
             <a href="passeios.html">Passeios</a>
-            <a href="sobre.html">Sobre</a>
-            <a href="contato.html">Contato</a>
+            <a href="contato.html">Fale Conosco</a>
         </nav>
     </header>
 
-    <!-- HERO -->
-    <section class="hero">
-        <img src="imagens/hero.jpg" alt="Rafting em corredeiras">
-        <h1 class="hero-text">A Aventura Começa Aqui!</h1>
-    </section>
+    <main>
 
-    <!-- CHAMADA PARA AÇÃO -->
-    <section class="cta">
-        <h2>Pronto para viver emoções inesquecíveis?</h2>
-        <a class="botao" href="passeios.html">Ver Passeios</a>
-    </section>
+        <!-- HERO -->
+        <section class="hero">
+            <img src="imagens/transparente.webp" alt="Rio abaixo"
+                style="display:block; width:100%; margin:0; padding:0;">
+            <h1 class="hero-text">A Aventura Começa Aqui!</h1>
+        </section>
 
-    <!-- GRID DE CONTEÚDO -->
-    <section class="grid-conteudo">
-        <div class="item">
-            <img src="imagens/rafting1.jpg" alt="Equipe de rafting">
-            <h3>Nossa Missão</h3>
-            <p>Proporcionar experiências únicas em contato com a natureza, com segurança e diversão garantidas.</p>
-        </div>
+        <!-- CTA -->
+        <section class="grid-conteudo">
+            <div class="item">
+                <img src="imagens/transparente.webp" alt="Equipe de rafting" width="220">
+                <h3>Nossa Missão</h3>
+                <p>Proporcionar experiências únicas em contato com a natureza, com segurança e diversão garantidas.</p>
+            </div>
 
-        <div class="item">
-            <img src="imagens/rafting2.jpg" alt="Guias profissionais">
-            <h3>Guias Profissionais</h3>
-            <p>Contamos com instrutores experientes e certificados para garantir sua aventura com tranquilidade.</p>
-        </div>
+            <div class="item">
+                <img src="imagens/equipe.webp" alt="Guias profissionais" width="220">
+                <h3>Guias Profissionais</h3>
+                <p>Contamos com instrutores experientes e certificados para garantir sua aventura com tranquilidade.</p>
+            </div>
 
-        <div class="item">
-            <img src="imagens/rafting3.jpg" alt="Aventura nas corredeiras">
-            <h3>Aventura para Todos</h3>
-            <p>Temos passeios para iniciantes, famílias e aventureiros experientes. Escolha o seu desafio.</p>
-        </div>
-    </section>
+            <div class="item">
+                <img src="imagens/amazonas.webp" alt="Aventura nas corredeiras" width="220">
+                <h3>Aventura para Todos</h3>
+                <p>Temos passeios para iniciantes, famílias e aventureiros experientes. Escolha o seu desafio.</p>
+            </div>
+        </section>
 
-    <!-- FORMULÁRIO DE NEWSLETTER -->
-    <section class="newsletter">
-        <h2>Inscreva-se para receber novidades</h2>
-        <form>
-            <label>Nome:</label>
-            <input type="text" name="nome" required>
 
-            <label>E-mail:</label>
-            <input type="email" name="email" required>
+        <!-- NEWSLETTER -->
+        <section class="newsletter">
+            <h2>Inscreva-se para receber novidades</h2>
+            <form>
+                <label>Nome:</label>
+                <input type="text" name="nome" required>
 
-            <button type="submit">Inscrever</button>
-        </form>
-    </section>
+                <label>E-mail:</label>
+                <input type="email" name="email" required>
 
+                <button type="submit">Inscrever</button>
+            </form>
+        </section>
+
+    </main>
+
+    <!-- FOOTER PADRONIZADO -->
     <footer>
-        <p>&copy; 2026 WWR Rafting | Desenvolvido por João Correa</p>
+        <nav class="redes-sociais">
+            <a href="#"><img src="imagens/facebook-square.svg" alt="Facebook"></a>
+            <a href="#"><img src="imagens/instagram-square.svg" alt="Instagram"></a>
+            <a href="#"><img src="imagens/twitter-square.svg" alt="Twitter"></a>
+        </nav>
+        <p>© 2026 Rio Abaixo Rafting — Desenvolvido por João Correa</p>
     </footer>
+
 </body>
 
 </html>
